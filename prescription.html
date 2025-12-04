@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Prescription – KeshavCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+
+    <!-- jsPDF for PDF Export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h2>💊 Prescription</h2>
+            <a href="index.html" class="back-link">← Back</a>
+        </header>
+
+        <!-- Complaints Auto Display -->
+        <section class="card">
+            <label><b>Patient Complaints (Auto-filled)</b></label>
+            <textarea id="complaintsBox" readonly placeholder="Complaints not found"></textarea>
+        </section>
+
+        <!-- Observations -->
+        <section class="card">
+            <label><b>Doctor Observations</b></label>
+            <textarea id="doctorObs"
+                placeholder="Ex: Patient febrile, throat redness, normal breathing sound..."></textarea>
+        </section>
+
+        <!-- Medications -->
+        <section class="card">
+            <label><b>Medications</b></label>
+            <textarea id="medications"
+                placeholder="1. Paracetamol 500mg – 1 tablet after food\n2. Amoxicillin 250mg – 1 capsule twice daily"></textarea>
+
+            <button id="downloadPrescriptionBtn" class="primary" style="margin-top: 16px;">
+                📄 Generate & Download PDF
+            </button>
+        </section>
+
+        <footer class="footer-note">
+            Notes & patient data auto saved locally for next screens.
+        </footer>
+    </div>
+
+    <script src="common.js"></script>
+</body>
+
+</html>

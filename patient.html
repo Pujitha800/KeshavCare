@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Patient Details – KeshavCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="app">
+    <header class="app-header">
+        <h2>👤 Patient & Visit Details</h2>
+        <a href="index.html" class="back-link">← Back</a>
+    </header>
+
+    <section class="card">
+        <div class="field">
+            <label>Patient Name</label>
+            <input id="patientNameInput" placeholder="e.g. Ramesh Kumar" />
+        </div>
+
+        <div class="field">
+            <label>Visit ID / MRN</label>
+            <input id="visitIdInput" placeholder="e.g. OPD-2435-09" />
+        </div>
+
+        <button class="primary" id="savePatientBtn">Save & Continue</button>
+    </section>
+</div>
+
+<script src="common.js"></script>
+</body>
+</html>

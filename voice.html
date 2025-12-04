@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Voice Notes – KeshavCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h2>🎙️ Voice Notes – Complaints</h2>
+            <a href="index.html" class="back-link">← Back</a>
+
+            <button id="goPrescriptionBtn" class="primary small-nav-btn">
+                💊 Go To Prescription →
+            </button>
+        </header>
+
+        <!-- Language selection -->
+        <section class="card">
+            <label for="languageSelect"><b>Recognition Language</b></label>
+            <select id="languageSelect">
+                <option value="en-IN">English (India)</option>
+                <option value="hi-IN">Hindi</option>
+                <option value="te-IN">Telugu</option>
+            </select>
+        </section>
+
+        <div class="status-chip">
+            <div id="statusIndicator" class="status-indicator"></div>
+            <span id="statusText">Mic is idle</span>
+        </div>
+
+        <section class="card">
+            <button id="toggleRecordBtn" class="primary">
+                <span id="toggleRecordLabel">Start Listening</span>
+            </button>
+            <button id="editComplaintsBtn" class="secondary">✏️ Edit Complaints</button>
+        </section>
+
+        <section class="card">
+            <label><b>Live Dictation</b></label>
+            <div id="liveText" class="placeholder">Start listening…</div>
+        </section>
+
+        <section class="card">
+            <label><b>Captured Complaints</b></label>
+            <ul id="pointsList"></ul>
+
+            <textarea id="editTextArea" style="display:none;"></textarea>
+            <button id="saveEditBtn" class="success" style="display:none;">Save Edits ✔</button>
+        </section>
+    </div>
+
+    <script src="voice.js"></script>
+</body>
+
+</html>

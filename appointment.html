@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Appointment – KeshavCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="app">
+    <header class="app-header">
+        <h2>📅 Appointment Booking</h2>
+        <a href="index.html" class="back-link">← Back</a>
+    </header>
+
+    <section class="card">
+        <div class="field">
+            <label>Date</label>
+            <input type="date" id="apptDate" />
+        </div>
+
+        <div class="field">
+            <label>Time</label>
+            <input type="time" id="apptTime" />
+        </div>
+
+        <div class="field">
+            <label>Patient Name</label>
+            <input id="apptPatientName" placeholder="e.g. Priya" />
+        </div>
+
+        <button id="bookAppointmentBtn" class="primary">Book Appointment</button>
+    </section>
+</div>
+
+<script src="common.js"></script>
+</body>
+</html>
